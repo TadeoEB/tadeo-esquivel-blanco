@@ -77,6 +77,27 @@
 				transform: scale(1.04);
 			}
 
+			/* UNIFORM TAXONOMIC PLATES: Standardizes 16:9 framing with seamless black background */
+			.taxonomic-grid {
+				justify-content: center;
+			}
+
+			.taxonomic-grid .image.fit {
+				background-color: #000000;
+				aspect-ratio: 16 / 9;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				border-radius: 6px;
+			}
+
+			.taxonomic-grid .image.fit img {
+				width: 100% !important;
+				height: 100% !important;
+				object-fit: contain !important;
+			}
+
 			/* Larger Avatar / Profile Picture */
 			.image.avatar {
 				width: 11em !important;
@@ -197,7 +218,7 @@
 					<ul>
 						<li><a href="javascript:void(0)" onclick="closeProject(event)" class="nav-link active">Home</a></li>
 						<li><a href="javascript:void(0)" onclick="openProject('publicaciones-conferencias', event)" class="nav-link">Publications & Conferences</a></li>
-						<li><a href="javascript:void(0)" onclick="openProject('galeria-fotografica', event)" class="nav-link">Photos</a></li>
+						<li><a href="javascript:void(0)" onclick="openProject('galeria-fotografica', event)" class="nav-link">Gallery</a></li>
 					</ul>
 				</nav>
 
@@ -366,11 +387,11 @@
 					</section>
 
 
-				<!-- SUBPAGE: PHOTOS -->
+				<!-- SUBPAGE: GALLERY -->
 					<section id="galeria-fotografica" class="project-detail" style="display: none;">
 						<header class="major">
-							<h2>Photos</h2>
-							<p><em>Macro Photography & Rainforest Fieldwork Archive</em></p>
+							<h2>Gallery</h2>
+							<p><em>Macro Photography, Taxonomic Plates & Rainforest Fieldwork Archive</em></p>
 						</header>
 
 						<div style="background: rgba(255, 255, 255, 0.05); padding: 1.2em 1.5em; border-left: 4px solid #49bf9d; border-radius: 4px; margin-bottom: 2em;">
@@ -411,6 +432,62 @@
 								</div>
 								<div class="col-6 col-12-xsmall">
 									<span class="image fit"><img src="images/DSC08239.jpg" alt="Translucent globose land snail" /></span>
+								</div>
+							</div>
+						</div>
+
+						<hr />
+
+						<h3>Taxonomic Shell Plates & Multifocal Microscopy</h3>
+						<div class="box alt">
+							<div class="row gtr-50 gtr-uniform taxonomic-grid">
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/592304778_4421192754775667_7515302070185582006_n.jpg" alt="Stereomicroscopic shell plate of freshwater limpet gastropod (scale bar = 1 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/595286802_4421192714775671_6000892147461924871_n.jpg" alt="Stereomicroscopic shell plate of planorbid freshwater snail in apical, apertural, and umbilical views (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/592181028_4421192024775740_788322246200801561_n.jpg" alt="Multifocal shell plate and live specimen of ribbed high-spired land snail (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/594960269_4421192018109074_3821346751519677239_n.jpg" alt="Multifocal shell plate and live specimen of banded globose land snail (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/592370373_4421192628109013_3244250503517951615_n.jpg" alt="Stereomicroscopic shell plate of depressed translucent land snail in apical, apertural, and umbilical views (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/592950063_4421192191442390_6901674276304794917_n.jpg" alt="Stereomicroscopic shell plate of reticulated operculate land snail in apertural, apical, and umbilical views (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/593522517_4421192351442374_3645871964703526185_n.jpg" alt="Stereomicroscopic shell plate of elongated cream-white microgastropod in apertural, apical, and umbilical views (scale bar = 1 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/594188251_4421192284775714_5230078850541141447_n.jpg" alt="Stereomicroscopic shell plate of minute conical white microgastropod in apertural, apical, and umbilical views (scale bar = 1 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/593541112_4421192251442384_8949975466697515699_n.jpg" alt="Stereomicroscopic shell plate of coronate conical microgastropod in apertural, apical, and umbilical views (scale bar = 1 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/594070432_4421192238109052_3942243798578253655_n.jpg" alt="Stereomicroscopic shell plate of axially ribbed operculate land snail in apertural, apical, and umbilical views (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/593958651_4421192131442396_6114090416857384356_n.jpg" alt="Stereomicroscopic shell plate of depressed umbilicate land snail in apical, apertural, and umbilical views (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/593418214_4421192104775732_6272138120735630057_n.jpg" alt="Stereomicroscopic shell plate of turreted brown-mottled freshwater snail in apertural, apical, and umbilical views (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/590603563_4421192021442407_8131596146248092168_n.jpg" alt="Stereomicroscopic shell plate of translucent amber depressed-globose land snail in apical, apertural, and umbilical views (scale bar = 1 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/593303373_4421192348109041_4998412424104320676_n.jpg" alt="Stereomicroscopic shell plate of ovate-conical light-brown microgastropod in apertural, apical, and umbilical views (scale bar = 1 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/592914659_4421193398108936_9042969627487836527_n.jpg" alt="Stereomicroscopic shell plate of elongated ribbed urocoptid land snail in apertural, apical, and umbilical views (scale bar = 2 mm)" /></span>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<span class="image fit"><img src="images/593445613_4421192804775662_2503306890416614463_n.jpg" alt="Stereomicroscopic shell plate of freshwater limpet gastropod in dorsal, ventral, and lateral views (scale bar = 1 mm)" /></span>
 								</div>
 							</div>
 						</div>
